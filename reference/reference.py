@@ -166,6 +166,13 @@ class ReferenceDocker(DockWidget):
         openButton = QToolButton()
         openButton.setDefaultAction(self.open)
         buttonLayout.addWidget(openButton)
+        
+        self.flip = QAction(self)
+        self.flip.setIconText("Flip")
+        self.flip.triggered.connect(self.flipImage)
+        flipButton = QToolButton()
+        flipButton.setDefaultAction(self.flip)
+        buttonLayout.addWidget(flipButton)
 
         layout.addLayout(buttonLayout)
         self.setWidget(widget)
@@ -189,6 +196,10 @@ class ReferenceDocker(DockWidget):
 
         self.viewer.setImage(QImage(fileName))
 
+    def flipImage(self):
+        self.viewer.image = self.viewer.image.mirrored(True, False)
+        self.viewer.update()
+        
     @pyqtSlot(QColor)
     def changeColor(self, color):
         if (self.canvas()) is not None and self.canvas().view() is not None:
