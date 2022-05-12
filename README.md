@@ -38,4 +38,5 @@ A color preview is displayed on the top of the Docker.
 
 ## Special Thanks to
 antoine-roux original developer of the plugin.
+
 ruslang02 for the code to flip the images.
