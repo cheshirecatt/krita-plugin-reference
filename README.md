@@ -35,3 +35,7 @@ Use the wheel or press on Ctrl and drag up-down to zoom.
 Just click on the wanted part of the reference, you can shift your selection by some pixels.
 
 A color preview is displayed on the top of the Docker.
+
+## Special Thanks to
+antoine-roux original developer of the plugin.
+ruslang02 for the code to flip the images.
