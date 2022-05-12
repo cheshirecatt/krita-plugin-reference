@@ -2,12 +2,6 @@
 
 This is a quick and dirty plugin to replace the removed Reference Images Docker in Krita 4.0.0
 
-## A temporary solution
-
-As said at https://krita.org/en/item/krita-4-0-0-released/, the removal is only temporary:
-
-"The Reference Images Docker has been removed. It was too easy to crash it if invalid image files where present. In Krita 4.1 it will be replaced by a new reference images tool."
-
 ## How to install
 
 Open Krita, in Settings -> Manage Resources click on the Open Resource Folder button.
